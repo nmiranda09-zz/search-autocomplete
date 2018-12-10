@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="main-container">
+		<div class="menu-container search-button-trigger">
+			<input type="text" name="" id="search" placeholder="Type to start searching" onkeyup="textChange($('#search').val())">
+			<div class="search-list">
+				<ul class="list-result"></ul>
+			</div>
+<!-- 			<div class="partial-match"><span>Partial Match</span></div>
+			<div class="partial-match" style="border-top: 1px solid #d6d6d6;background-color: #ebebeb"><span>Autofill Match</span></div>
+			<div class="other-match" style="border-top: 1px solid #d6d6d6;"><span>Other Match</span></div> -->
+		</div>
+		<div class="search-container">
+			<button class="search-button" onclick="displaySearch()"><i class="fas fa-search"></i>Search</button>
+			<div class="popup">
+				<div class="title-container">
+					<span>AUTOFILL MATCH</span>
+				</div>
+				<div class="content-container">
+					<span id="content">Hello!</span>
+				</div>
+				<div class="cancel">
+					<span>Cancel</span>
+				</div>
+				<div class="proceed" onclick="alert('Done!')">
+					<span>Proceed</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
